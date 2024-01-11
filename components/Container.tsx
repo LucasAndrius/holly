@@ -5,5 +5,3 @@ export default function Container({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-
-//container mx-auto max-w-5xl scroll-smooth px-10
