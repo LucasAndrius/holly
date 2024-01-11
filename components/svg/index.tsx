@@ -1,0 +1,9 @@
+export { default as Menu } from "./menu.svg";
+export { default as Close } from "./close.svg";
+export { default as Sun } from "./sun.svg";
+export { default as Moon } from "./moon-stars.svg";
+export { default as Site } from "./site_proprio.svg";
+export { default as Blog } from "./blog.svg";
+export { default as Internet } from "./internet.svg";
+export { default as Analytics } from "./analytics.svg";
+export { default as Walking } from "./walking.svg";
