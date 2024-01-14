@@ -21,7 +21,7 @@ export const ThemeButton = () => {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <Sun width={24} height={24} className="text-myYellow" />
+        <Sun width={24} height={24} className="text-yellow-200" />
       ) : (
         <Moon width={24} height={24} className="text-myBlack" />
       )}

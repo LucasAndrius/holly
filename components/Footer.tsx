@@ -1,4 +1,5 @@
 import Container from "./Container";
+import { Copyright } from "./svg";
 
 export const Footer = () => {
   return (
@@ -6,8 +7,12 @@ export const Footer = () => {
       <footer className="pt-16 pb-8">
         <div className="">
           <div>
-            <p className="text-center font-semibold">
-              Todos os direitos reservados 2023
+            <p className="flex justify-center font-semibold">
+              Todos os direitos reservados{" "}
+              <span className="flex items-center px-1">
+                <Copyright />
+              </span>
+              2023
             </p>
           </div>
         </div>

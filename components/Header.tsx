@@ -4,6 +4,7 @@ import { Close, Menu } from "./svg";
 import { navbarLinks } from "@/utils/data";
 import { ThemeButton } from "./ThemeButton";
 import Container from "./Container";
+import { Social } from "./Social";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,27 +17,30 @@ export const Header = () => {
       <nav className="py-3 mt-5 my-5">
         <div className="flex justify-between">
           <header className="hidden sm:flex gap-6">
-            {/* {navbarLinks.map((link) => (
-            <a className="font-bold" href={link.path[0]} key={link.id}>
-              {link.label}
-            </a>
-          ))} */}
+            {navbarLinks.map((link) => (
+              <a className="font-bold" href={link.path[0]} key={link.id}>
+                {link.label}
+              </a>
+            ))}
             <a href="#quote" className="font-bold">
               <div className="w-full py-2 px-3 mt-[-8px] text-center font-semibold rounded-xl bg-mySageGreen/80 text-white hover:bg-mySageGreen">
                 Solicitar Orçamento
               </div>
             </a>
           </header>
-          <div className="hidden sm:flex gap-4">
-            {/* <div> icones</div> */}
+          <div className="hidden sm:flex gap-8">
+            <div className="flex items-center">
+              {" "}
+              <Social />
+            </div>
             <ThemeButton />
           </div>
-          {/*  <div
-          onClick={handleNav}
-          className="absolute top-8 right-10 text-2xl  sm:hidden "
-        >
-          {menuOpen ? <></> : <Menu />}
-        </div> */}
+          <div
+            onClick={handleNav}
+            className="absolute top-8 right-10 text-2xl  sm:hidden "
+          >
+            {menuOpen ? <></> : <Menu />}
+          </div>
         </div>
         <hr className="mt-5 dark:opacity-50" />
         <div
@@ -52,17 +56,17 @@ export const Header = () => {
             ) : (
               <></>
             )}
-            {/* <header className="flex flex-col my-3">
-            {navbarLinks.map((link, index) => (
-              <a
-                href={link.path[0]}
-                key={index}
-                className="py-2 border-b-2 text-center"
-              >
-                {link.label}
-              </a>
-            ))}
-          </header> */}
+            <header className="flex flex-col my-3">
+              {navbarLinks.map((link, index) => (
+                <a
+                  href={link.path[0]}
+                  key={index}
+                  className="py-2 border-b-2 text-center"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </header>
           </div>
         </div>
       </nav>

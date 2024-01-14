@@ -10,7 +10,7 @@ export const Portfolio = async () => {
   return (
     <ContainerSM>
       <div className="py-8 pb-20">
-        <div key={lastProject._id} className="lg:relative">
+        <div id="portfolio" key={lastProject._id} className="lg:relative">
           <div className="mb-5 lg:mb-0 lg:absolute lg:top-20 lg:left-[-40px] lg:bg-myBlack/95 lg:text-white dark:bg-white/90 dark:text-myBlack lg:p-5 lg:pl-20">
             <h2 className="font-bold text-2xl lg:text-4xl">Último Projeto</h2>
           </div>
@@ -47,9 +47,13 @@ export const Portfolio = async () => {
             <div className="text-sm sm:text-base">
               <PortableText value={lastProject.description} />
             </div>
-            <div className="max-w-[180px] pt-5">
-              <ButtonTransparent href={lastProject.url} label="acesse" />
-            </div>
+            {lastProject.url ? (
+              <div className="max-w-[180px] pt-5">
+                <ButtonTransparent href={lastProject.url} label="acesse" />
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>

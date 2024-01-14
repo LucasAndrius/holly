@@ -7,3 +7,5 @@ export { default as Blog } from "./blog.svg";
 export { default as Internet } from "./internet.svg";
 export { default as Analytics } from "./analytics.svg";
 export { default as Walking } from "./walking.svg";
+export { default as Instagram } from "./instagram.svg";
+export { default as Copyright } from "./copyright.svg";

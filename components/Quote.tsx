@@ -4,7 +4,7 @@ export const Quote = () => {
   return (
     <Container>
       <div className="py-8 bg-myBlack dark:bg-white text-white dark:text-myBlack px-10 rounded-xl">
-        <div className="">
+        <div>
           <div className="text-center">
             <h2 className="font-bold text-2xl md:text-4xl mb-5">
               Solisite seu orçamento
