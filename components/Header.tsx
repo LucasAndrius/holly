@@ -16,6 +16,9 @@ export const Header = () => {
     <Container>
       <nav className="py-3 mt-5 my-5">
         <div className="flex justify-between">
+          <div className="sm:flex md:hidden mt-[-20px]">
+            <ThemeButton />
+          </div>
           <header className="hidden sm:flex gap-6">
             {navbarLinks.map((link) => (
               <a className="font-bold" href={link.path[0]} key={link.id}>
