@@ -40,9 +40,9 @@ export default function RootLayout({
           height="0"
           width="0"
         ></iframe>
-        <ThemeProvider attribute="class">
-          <div>{children}</div>
-        </ThemeProvider>
+        {/*  <ThemeProvider attribute="class"> */}
+        <div>{children}</div>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

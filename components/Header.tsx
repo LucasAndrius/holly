@@ -17,7 +17,7 @@ export const Header = () => {
       <nav className="py-3 mt-5 my-5">
         <div className="flex justify-between">
           <div className="sm:flex md:hidden mt-[-20px]">
-            <ThemeButton />
+            {/* <ThemeButton /> */}
           </div>
           <header className="hidden sm:flex gap-6">
             {navbarLinks.map((link) => (
@@ -36,17 +36,17 @@ export const Header = () => {
               {" "}
               <Social />
             </div>
-            <ThemeButton />
+            {/* <ThemeButton />  */}
           </div>
-          <div
+          {/*  <div
             onClick={handleNav}
             className="absolute top-8 right-10 text-2xl  sm:hidden "
           >
             {menuOpen ? <></> : <Menu />}
-          </div>
+          </div> */}
         </div>
         <hr className="mt-5 dark:opacity-50" />
-        <div
+        {/* <div
           className={
             menuOpen
               ? "fixed left-0 top-0 w-[70%] sm:hidden h-screen  p-10 ease-in duration-300 bg-black/90"
@@ -71,7 +71,7 @@ export const Header = () => {
               ))}
             </header>
           </div>
-        </div>
+        </div> */}
       </nav>
     </Container>
   );

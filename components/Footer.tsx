@@ -7,7 +7,7 @@ export const Footer = () => {
       <footer className="pt-16 pb-8">
         <div className="">
           <div>
-            <p className="flex justify-center font-semibold">
+            <p className="flex justify-center font-semibold text-xs sm:text-base">
               Todos os direitos reservados{" "}
               <span className="flex items-center px-1">
                 <Copyright />
