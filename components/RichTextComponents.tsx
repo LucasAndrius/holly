@@ -3,11 +3,6 @@ import Link from "next/link";
 import { urlForImage } from "@/sanity/lib/image";
 import { Merriweather, Yeseva_One } from "next/font/google";
 
-const yeseva = Yeseva_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 const merriweather = Merriweather({
   subsets: ["latin"],
   weight: "400",

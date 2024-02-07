@@ -1,5 +1,4 @@
 import { Cinzel_Decorative } from "next/font/google";
-import { Walking } from "./svg";
 import Image from "next/image";
 import Container from "./Container";
 import H1 from "./Titles/H1";

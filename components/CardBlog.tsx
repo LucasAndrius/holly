@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import H4 from "./Titles/H4";
-import { PortableText } from "@portabletext/react";
-import { TypedObject } from "sanity";
 
 type Props = {
   title: string;
