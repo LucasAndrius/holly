@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Holly Agência",
+  title: "Holly Agência | Desenvolvimento de Sites",
   description:
     "A Holly cria sites customizados, responsivos e otimizados para os mecanismos de busca, ajudando seus clientes a aumentar a visibilidade de seus produtos ou serviços.",
 };
@@ -32,9 +32,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${inter.className} bg-myYellow/5 text-myBlack dark:bg-myDarkGreen/5 dark:text-white`}
-      >
+      <body className={`${inter.className}`}>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-PGNJM94J"
           height="0"

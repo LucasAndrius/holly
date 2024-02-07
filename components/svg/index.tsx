@@ -6,6 +6,7 @@ export { default as Site } from "./site_proprio.svg";
 export { default as Blog } from "./blog.svg";
 export { default as Internet } from "./internet.svg";
 export { default as Analytics } from "./analytics.svg";
-export { default as Walking } from "./walking.svg";
 export { default as Instagram } from "./instagram.svg";
 export { default as Copyright } from "./copyright.svg";
+export { default as Leaf } from "./Folha_Verde_Fundo_Transparente.svg";
+export { default as Whatsapp } from "./whatsapp.svg";

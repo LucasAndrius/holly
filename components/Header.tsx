@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import { Close, Menu } from "./svg";
+import { Close, Leaf, Menu } from "./svg";
 import { navbarLinks } from "@/utils/data";
 import { ThemeButton } from "./ThemeButton";
 import Container from "./Container";
 import { Social } from "./Social";
+import Image from "next/image";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,12 +22,17 @@ export const Header = () => {
           </div>
           <header className="hidden sm:flex gap-6">
             {navbarLinks.map((link) => (
-              <a className="font-bold" href={link.path[0]} key={link.id}>
+              <a
+                className="group flex justify-center items-center font-bold"
+                href={link.path[0]}
+                key={link.id}
+              >
                 {link.label}
+                <Leaf className="mx-2 group-hover:text-green-500" />
               </a>
             ))}
-            <a href="#quote" className="font-bold">
-              <div className="w-full py-2 px-3 mt-[-8px] text-center font-semibold rounded-xl bg-mySageGreen/80 text-white hover:bg-mySageGreen">
+            <a href="/#quote" className="font-bold">
+              <div className="w-full py-2 px-3 text-center font-semibold rounded-xl bg-green-950 text-white border-2 decoration-transparent hover:bg-white hover:border-2 hover:decoration-black hover:text-black duration-150 ease-linear">
                 Solicitar Orçamento
               </div>
             </a>
