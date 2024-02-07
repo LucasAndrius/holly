@@ -28,7 +28,10 @@ export const Header = () => {
                 key={link.id}
               >
                 {link.label}
-                <Leaf className="mx-2 group-hover:text-green-500" />
+                <Leaf
+                  className="mx-2 group-hover:text-green-500"
+                  alt="folha da logo Holly Agência utilizada como decoração ao lado aos nomes do menu"
+                />
               </a>
             ))}
             <a href="/#quote" className="font-bold">

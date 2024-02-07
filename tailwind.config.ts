@@ -16,7 +16,6 @@ const config: Config = {
         mySageGreen: "#6d9773",
         myDarkGreen: "#0c3b2e",
         myLink: "#0174BE",
-        whatsapp: "#25d366",
       },
     },
   },

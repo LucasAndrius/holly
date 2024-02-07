@@ -15,19 +15,16 @@ export const Quote = () => {
             <li>
               <a
                 href="https://whatsa.me/5553999702452/?t=Ol%C3%A1,%20gostaria%20de%20realizar%20um%20or%C3%A7amento."
-                className="flex items-center gap-2 bg-whatsapp max-w-fit font-semibold py-3 px-10 rounded-xl"
+                className="flex items-center gap-2 bg-white text-black max-w-fit font-semibold py-3 px-10 rounded-xl"
                 target="_blank"
               >
-                Orçamento <Whatsapp className="text-xl" />
+                Orçamento{" "}
+                <Whatsapp className="text-xl" alt="whatsapp" name="whatsapp" />
               </a>
             </li>
             <li>
               <span className="font-semibold">E-mail: </span>
-              <a
-                id="quote"
-                href="mailto:hollyagenciacontato@gmail.com"
-                className="text-myLink"
-              >
+              <a id="quote" href="mailto:hollyagenciacontato@gmail.com">
                 hollyagenciacontato@gmail.com
               </a>
             </li>
