@@ -8,7 +8,7 @@ export const Quote = () => {
         <div>
           <div className="text-center">
             <h2 className="font-bold text-2xl md:text-4xl mb-5">
-              Solisite seu orçamento
+              Solicite seu orçamento
             </h2>
           </div>
           <ul className="flex flex-col gap-4 items-center text-center text-xs sm:text-base">
